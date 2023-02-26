@@ -4,6 +4,47 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h1>EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE</h1>
+        <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">The 5P Collection</button>
+        <button class="tablink" onclick="openPage('New', this, 'green')">New</button>
+        <button class="tablink" onclick="openPage('Pieces', this, 'blue')">Pieces</button>
+        <button class="tablink" onclick="openPage('Contact', this, 'orange')">Contact</button>
+
+        <div id="Home" class="tabcontent">
+         <h3>The 5P Collection</h3>
+         <p>setup</p>
+        </div>
+
+        <div id="New" class="tabcontent">
+         <h3>New Pieces</h3>
+         <p>setup</p> 
+        </div>
+
+        <div id="Pieces" class="tabcontent">
+         <h3>Our Collection</h3>
+         <p>setup</p>
+        </div>
+
+        <div id="Contact" class="tabcontent">
+         <h3>Contact Us</h3>
+         <p>setup</p>
+        </div>
     </body>
+    <script>
+        function openPage(pageName,elmnt,color) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+          }
+          document.getElementById(pageName).style.display = "block";
+          elmnt.style.backgroundColor = color;
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
 </html>
