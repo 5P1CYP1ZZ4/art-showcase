@@ -20,11 +20,12 @@ html {
     background-color: #777;
 }
 .tabcontent {
+    color: #ccc;
     display: none;
     padding: 100px 20px;
     height: 100%;
 }
-#Home {background-color: #ccc;color: #333;}
-#New {background-color: #333;color: #ccc;}
-#Pieces {background-color: #333;color: #ccc;}
-#Contact {background-color: #ccc; color: #333;}
+#Home {background-color: #333; }
+#New {background-color: #333; }
+#Pieces {background-color: #333; }
+#Contact {background-color: #333; }
