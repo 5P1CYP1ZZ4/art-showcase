@@ -25,7 +25,7 @@ html {
     padding: 100px 20px;
     height: 100%;
 }
-#Home {background-color: red;}
-#News {background-color: green;}
-#Contact {background-color: blue;}
-#About {background-color: orange;}
+#Home {background-color: #ccc;}
+#New {background-color: #333;}
+#Pieces {background-color: #333;}
+#Contact {background-color: #ccc;}
